@@ -21,7 +21,7 @@ public class Paddle {
     /**
      * @param g
      */
-    public static void draw(Graphics g) {
+    public void draw(Graphics g) {
         g.setColor(Color.RED);
         g.fillRect(this.x, this.y , width, length);
 

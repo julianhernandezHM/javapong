@@ -54,10 +54,27 @@ public class MyPongPanel extends JPanel {
 
             //check for collision with paddles             
             // TODO: CODE HERE
+
+            { if (b.x+b.diameter <= one.x)
+                { 
+                    b.dx = -1*b.dx;
+
+                }
+            }
+
+            { if (b.x+b.diameter >= two.x and two.y > b.y > two.y-250)
+                { 
+                    b.dx = -1*b.dx;
+
+                }
+            }
         
             repaint();
 
             Thread.sleep(10);
         }
-	}
     }
+
+  
+}
+    
